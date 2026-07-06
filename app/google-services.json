@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "458169951770",
+    "firebase_url": "https://fir-monitoreos13-default-rtdb.firebaseio.com",
+    "project_id": "fir-monitoreos13",
+    "storage_bucket": "fir-monitoreos13.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458169951770:android:5059f6bf63c5edf9e1d3a3",
+        "android_client_info": {
+          "package_name": "com.uteq.monitoreofirebases13"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3Z8_tQ9aeYUvuHPdMYKmq0FRDnmX5Zwc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
