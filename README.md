@@ -11,7 +11,7 @@ Aplicación Android nativa (Java) que monitorea sensores en tiempo real usando *
   - 💧 Humedad (%)
   - 📶 Presión (hPa)
   - ⚡ Velocidad (km/h)
-- **Seteo de valores**: campos de entrada numérica con botón "Set" para escribir nuevos valores de temperatura y humedad directamente en Firebase.
+- **Seteo de valores**: campos de entrada numérica con botón "Set" para escribir nuevos valores de temperatura, humedad, presión y velocidad directamente en Firebase.
 - **Validación de entrada**: si el campo está vacío o no es numérico, se muestra un Toast en lugar de romper la app.
 - **Modo oscuro permanente**: la app fuerza el tema oscuro (`AppCompatDelegate.MODE_NIGHT_YES`) con paleta lavanda oscura.
 
@@ -33,9 +33,9 @@ https://fir-monitoreos13-default-rtdb.firebaseio.com/
 └── sensores/
     ├── fecha        (string)
     ├── humedad      (número)   ← lectura y escritura
-    ├── presion      (número)   ← solo lectura
+    ├── presion      (número)   ← lectura y escritura
     ├── temperatura  (número)   ← lectura y escritura
-    └── velocidad    (número)   ← solo lectura
+    └── velocidad    (número)   ← lectura y escritura
 ```
 
 ## Estructura del proyecto

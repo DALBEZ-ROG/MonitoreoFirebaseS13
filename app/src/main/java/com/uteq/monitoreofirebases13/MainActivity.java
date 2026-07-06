@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private TextView valorVelocidad;
     private EditText setvalorTemperatura;
     private EditText setvalorHumedad;
+    private EditText setvalorPresion;
+    private EditText setvalorVelocidad;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
         valorVelocidad = findViewById(R.id.valor_Velocidad);
         setvalorTemperatura = findViewById(R.id.setvalor_Temperatura);
         setvalorHumedad = findViewById(R.id.setvalor_Humedad);
+        setvalorPresion = findViewById(R.id.setvalor_Presion);
+        setvalorVelocidad = findViewById(R.id.setvalor_Velocidad);
 
         // Referencias a los nodos de la ruta sensores/
         temperaturaRef = database.getReference("sensores/temperatura");
@@ -110,6 +114,24 @@ public class MainActivity extends AppCompatActivity {
         try {
             float valor = Float.parseFloat(setvalorHumedad.getText().toString());
             humedadRef.setValue(valor);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Ingresa un valor numérico válido", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void clickBotonPresion(View view) {
+        try {
+            float valor = Float.parseFloat(setvalorPresion.getText().toString());
+            presionRef.setValue(valor);
+        } catch (NumberFormatException e) {
+            Toast.makeText(this, "Ingresa un valor numérico válido", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void clickBotonVelocidad(View view) {
+        try {
+            float valor = Float.parseFloat(setvalorVelocidad.getText().toString());
+            velocidadRef.setValue(valor);
         } catch (NumberFormatException e) {
             Toast.makeText(this, "Ingresa un valor numérico válido", Toast.LENGTH_SHORT).show();
         }
